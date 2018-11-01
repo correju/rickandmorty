@@ -1,3 +1,16 @@
-<p>
-  characters works!
-</p>
+<article class="container">
+    <h1>List of all characters</h1>
+    <p>This page shows all characters in data repository</p>
+    <div class="image-wrapper">
+      <app-character-item 
+        class="character-item"
+        *ngFor="let character of characters" 
+        [character]="character">
+      </app-character-item>
+    </div>
+    <div class="btn-wrapper">
+      <button [disabled]="urlPrev === ''"  (click)="prevPage()" class="btn btn-primary btn-xs-block character-btn">Prev</button>
+      <div class="current-page">{{currentPage}}</div>
+      <button [disabled]="urlNext === ''" (click)="nextPage()" class="btn btn-primary btn-xs-block character-btn">Next</button>
+    </div>
+  </article>

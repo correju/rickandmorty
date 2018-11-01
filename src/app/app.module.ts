@@ -16,6 +16,7 @@ import { CharacterItemComponent } from './character-item/character-item.componen
  * Services
  */
 import { CharactersService } from './services/characters/characters.service';
+import { CharacterComponent } from './character/character.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CharactersService } from './services/characters/characters.service';
     HomeComponent,
     HeaderComponent,
     CharactersComponent,
-    CharacterItemComponent
+    CharacterItemComponent,
+    CharacterComponent
   ],
   imports: [
     BrowserModule,
