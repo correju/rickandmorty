@@ -1,8 +1,14 @@
-<article>
+<article class="container">
   <h1>Random Characters</h1>
   <p>This page shows random characters from Rick and Morty TV show</p>
-  <app-character-item 
-    *ngFor="let character of randomCharacters" 
-    [character]="character">
-  </app-character-item>
+  <div class="image-wrapper">
+    <app-character-item 
+      class="character-item"
+      *ngFor="let character of randomCharacters" 
+      [character]="character">
+    </app-character-item>
+  </div>
+  <div class="btn-wrapper">
+    <a class="btn btn-primary btn-xs-block character-btn" [routerLink]="['characters']">See all</a>
+  </div>
 </article>
