@@ -1,1 +1,8 @@
-<h1>Home Works</h1>
+<article>
+  <h1>Random Characters</h1>
+  <p>This page shows random characters from Rick and Morty TV show</p>
+  <app-character-item 
+    *ngFor="let character of randomCharacters" 
+    [character]="character">
+  </app-character-item>
+</article>
