@@ -1,0 +1,29 @@
+.character-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  font-size: 1.5em;
+  & > * {
+    padding: 15px;
+    &:first-child {
+      padding-left: 0px;
+    }
+    &:last-child {
+      padding-right: 0px;
+    }
+  } 
+}
+.character-key-info {
+  margin: 15px 0;
+}
+.character-image {
+  border-radius: 50%;
+}
+.key {
+  text-transform: capitalize;
+  font-weight: bold;
+  color: yellow;
+}
+.value {
+
+}

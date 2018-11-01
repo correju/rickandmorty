@@ -1,0 +1,13 @@
+<div class="character-wrapper">
+  <aside class="image">
+    <img class="character-image" [src]="character.image" [alt]="character.name">
+  </aside>
+  <aside class="info">
+    <ul>
+      <li class="character-key-info" *ngFor="let key of keys" >
+        <span class="key">{{key.title}}: </span>
+        <span class="value">{{character[key.key]}}</span>
+      </li>
+    </ul>
+  </aside>
+</div>
